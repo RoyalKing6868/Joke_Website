@@ -1,0 +1,77 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Merriweather:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdffdb;
+}
+.container{
+    border: .1rem solid #ff8989;
+    width: 30rem;
+    text-align: center;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.container .header{
+    background-color: #eaf733;
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+}
+.container .content{
+    margin: 1rem;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.container .button{
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.btn{
+    margin-bottom: .5rem;
+    border: .1rem solid #ff8989;
+    outline: none;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    font-size: .9rem;
+    color: rgb(53, 72, 72);
+    background-image: linear-gradient(to top, #eaf733, #ff9a56);
+    font-weight: 700;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+@media (max-width: 450px){
+    .container{
+        overflow: hidden;
+        width: 90%;
+    }
+    .container .header{
+        font-size: .8rem;
+    }
+    .container .content{
+        font-size: .6rem;
+    }
+    .btn{
+        font-size: .6rem;
+        font-weight: 700;
+        padding: .4rem;
+    }
+}
